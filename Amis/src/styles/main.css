@@ -1,0 +1,228 @@
+@font-face {
+    font-family: Bold;
+    src: url("../assets/fonts/notosans-bold.3ede5aff.woff2");
+}
+
+@font-face {
+    font-family: Regular;
+    src: url("../assets/fonts/notosans-regular.2cb88a13.woff2");
+}
+
+@font-face {
+    font-family: Italic;
+    src: url("../assets/fonts/notosans-italic.1c1aaac9.woff2");
+}
+
+@font-face {
+    font-family: Semibold;
+    src: url("../assets/fonts/notosans-semibold.df3e6dc4.woff2");
+}
+
+@import "d.css";
+@import "mp.css";
+@import "bg.css";
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Regular;
+}
+
+.hide-txt {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 160px;
+}
+
+.b-red {
+    color: red;
+}
+
+.h-32 {
+    height: 32px;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.MISABtn {
+    font-family: Bold;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #fff;
+    /* min-width: 100px; */
+    padding: 0 20px;
+    height: 36px;
+    cursor: pointer;
+    background: #fff;
+}
+
+.MISADefault:focus {
+    background: #d2d3d6;
+}
+
+.MISASucess:focus {
+    background: #35bf22;
+}
+
+.MISADefault {
+    background: #fff;
+    border: 1px solid #8d9096;
+    color: #000;
+}
+
+.MISADefault:hover {
+    background: #d2d3d6;
+}
+
+.MISASucess {
+    background: #25a415;
+}
+
+.MISASucess:hover {
+    background: #35bf22;
+}
+
+.bold {
+    font-family: Bold;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+    border: 1px solid #888;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 4px;
+    width: 4px;
+    border: 1px solid #888;
+}
+
+.t-c {
+    text-align: center !important;
+}
+
+.t-l {
+    text-align: left;
+}
+
+input[type=checkbox] {
+    height: 18px;
+    width: 18px;
+}
+
+input[type=radio] {
+    height: 18px;
+    width: 18px;
+    margin: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    border: 1px solid #d2d3d6;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    outline: none;
+}
+
+input[type=radio]:checked {
+    position: relative;
+    border: 1px solid #25a415;
+
+}
+
+
+input[type='radio']:checked:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    top: 1px;
+    left: 3px;
+    position: relative;
+    background-color: #2ca01c;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+#tongquan {
+    background: url("../assets/img/Sprites.64af8f61.svg") no-repeat -33px -1629px;
+    border: none;
+}
+
+#tienmat {
+    background: url("../assets/img/Sprites.64af8f61.svg") no-repeat -78px -1631px;
+    border: none;
+}
+
+#tiengui {
+    background: url("../assets/img/Sprites.64af8f61.svg") no-repeat -121px -1633px;
+    border: none;
+}
+
+#muahang {
+    background: url("../assets/img/Sprites.64af8f61.svg") no-repeat -165px -1632px;
+    border: none;
+}
+
+#banhang {
+    background: url("../assets/img/Sprites.64af8f61.svg") no-repeat -206px -1631px;
+    border: none;
+}
+
+#hoadon {
+    background: url("../assets/img/Sprites.64af8f61.svg") no-repeat -254px -1632px;
+    border: none;
+}
+
+#kho {
+    background: url("../assets/img/Sprites.64af8f61.svg") no-repeat -254px -1632px;
+    border: none;
+}
+
+#dungcu {
+    background: url("../assets/img/Sprites.64af8f61.svg") no-repeat -339px -1633px;
+    border: none;
+}
+
+#taisan {
+    background: url("../assets/img/Sprites.64af8f61.svg") no-repeat -382px -1632px;
+    border: none;
+}
+
+#nhanvien {
+    background: url("../assets/img/Sprites.64af8f61.svg") no-repeat -120px -1664px;
+    border: none;
+}

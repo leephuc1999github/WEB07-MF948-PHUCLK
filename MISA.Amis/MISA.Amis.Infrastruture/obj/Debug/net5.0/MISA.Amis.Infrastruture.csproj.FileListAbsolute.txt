@@ -1,0 +1,15 @@
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Infrastruture\bin\Debug\net5.0\MISA.Amis.Core.dll
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Infrastruture\obj\Debug\net5.0\MISA.Amis.Infrastruture.csprojAssemblyReference.cache
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Infrastruture\obj\Debug\net5.0\MISA.Amis.Infrastruture.GeneratedMSBuildEditorConfig.editorconfig
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Infrastruture\obj\Debug\net5.0\MISA.Amis.Infrastruture.AssemblyInfoInputs.cache
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Infrastruture\obj\Debug\net5.0\MISA.Amis.Infrastruture.AssemblyInfo.cs
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Infrastruture\bin\Debug\net5.0\MISA.Amis.Infrastruture.deps.json
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Infrastruture\bin\Debug\net5.0\MISA.Amis.Infrastruture.dll
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Infrastruture\bin\Debug\net5.0\ref\MISA.Amis.Infrastruture.dll
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Infrastruture\bin\Debug\net5.0\MISA.Amis.Infrastruture.pdb
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Infrastruture\bin\Debug\net5.0\MISA.Amis.Core.pdb
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Infrastruture\obj\Debug\net5.0\MISA.Amis.Infrastruture.csproj.CoreCompileInputs.cache
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Infrastruture\obj\Debug\net5.0\MISA.Amis.Infrastruture.csproj.CopyComplete
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Infrastruture\obj\Debug\net5.0\MISA.Amis.Infrastruture.dll
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Infrastruture\obj\Debug\net5.0\ref\MISA.Amis.Infrastruture.dll
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Infrastruture\obj\Debug\net5.0\MISA.Amis.Infrastruture.pdb

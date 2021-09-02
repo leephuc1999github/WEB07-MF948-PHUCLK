@@ -1,0 +1,11 @@
+.d-flex{
+    display: flex;
+}
+
+.align-self-c{
+    align-self: center;
+}
+
+.align-items-c{
+    align-items: center;
+}

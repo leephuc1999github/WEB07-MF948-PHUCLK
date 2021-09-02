@@ -1,0 +1,14 @@
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Core\bin\Debug\net5.0\MISA.Amis.Core.deps.json
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Core\bin\Debug\net5.0\MISA.Amis.Core.dll
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Core\bin\Debug\net5.0\ref\MISA.Amis.Core.dll
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Core\bin\Debug\net5.0\MISA.Amis.Core.pdb
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Core\obj\Debug\net5.0\MISA.Amis.Core.csprojAssemblyReference.cache
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Core\obj\Debug\net5.0\MISA.Amis.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Core\obj\Debug\net5.0\MISA.Amis.Core.AssemblyInfoInputs.cache
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Core\obj\Debug\net5.0\MISA.Amis.Core.AssemblyInfo.cs
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Core\obj\Debug\net5.0\MISA.Amis.Core.csproj.CoreCompileInputs.cache
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Core\obj\Debug\net5.0\MISA.Amis.Core.dll
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Core\obj\Debug\net5.0\ref\MISA.Amis.Core.dll
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Core\obj\Debug\net5.0\MISA.Amis.Core.pdb
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Core\obj\Debug\net5.0\MISA.Amis.Core.Properties.Resource.resources
+E:\MYPROJECT\FrontEndApp\Amis\MISA.Amis\MISA.Amis.Core\obj\Debug\net5.0\MISA.Amis.Core.csproj.GenerateResource.cache
