@@ -20,8 +20,9 @@
             <div class="question-icon" title="Giúp"></div>
             <div
               class="close-icon"
-              title="Đóng"
+              title="Đóng(Esc)"
               @click="closeForm('close')"
+              v-shortkey="['esc']" @shortkey="closeForm('close')"
             ></div>
           </div>
         </div>
@@ -118,31 +119,48 @@
                     <span class="mr-10 d-flex align-items-c"
                       ><input
                         type="radio"
-                        name="Gender"
+                        name="male"
                         class="align-self-c mr-8"
                         tabindex="4"
                         v-model="employee.gender"
                         value="0"
+                        ref="male"
+                        @focus="
+                          focusByRefName('male');
+                          employee.gender = 0;
+                        "
                       />
                       Nam
                     </span>
                     <span class="mr-10 d-flex align-items-c"
                       ><input
                         type="radio"
-                        name="Gender"
+                        name="female"
                         class="align-self-c mr-8"
+                        tabindex="4"
                         value="1"
                         v-model="employee.gender"
+                        ref="female"
+                        @focus="
+                          focusByRefName('female');
+                          employee.gender = 1;
+                        "
                       />
                       Nữ</span
                     >
                     <span class="d-flex align-items-c"
                       ><input
                         type="radio"
-                        name="Gender"
+                        name="other"
+                        tabindex="4"
                         class="align-self-c mr-8"
                         value="2"
                         v-model="employee.gender"
+                        ref="other"
+                        @focus="
+                          focusByRefName('other');
+                          employee.gender = 2;
+                        "
                       />
                       Khác</span
                     >
@@ -272,16 +290,18 @@
           <div class="ml-auto"></div>
           <button
             class="MISABtn MISADefault mr-10"
-            title="Cất"
+            title="Cất(Ctrl+S)"
             tabindex="18"
             @click="saveForm(1)"
+            v-shortkey="['ctrl', 's']" @shortkey="saveForm(1)"
           >
             Cất
           </button>
           <button
             class="MISABtn MISASucess"
             @click="saveForm(2)"
-            title="Cất và thêm"
+            title="Cất và thêm((Ctrl+Shift+S))"
+            v-shortkey="['ctrl', 'shift', 's']" @shortkey="saveForm(2)"
             tabindex="19"
           >
             Cất và Thêm
@@ -336,10 +356,10 @@ export default {
     // giá trị so sánh
     this.clone = JSON.stringify(this.employee);
     // focus employee code
-    this.focusEmployeeCode();
+    this.focusByRefName("employeeCode");
     // set tabindex datepicker
-    this.setTabindexDatePicker("dateOfBirth", 3);
-    this.setTabindexDatePicker("identityDate", 7);
+    this.setTabindex("dateOfBirth", 3);
+    this.setTabindex("identityDate", 7);
   },
   data() {
     return {
@@ -358,7 +378,7 @@ export default {
   },
   watch: {
     getEmployee() {
-      // nếu chọn cất và thêm 
+      // nếu chọn cất và thêm
       // reset form
       if (this.type == 2) {
         this.employee = this.getEmployee;
@@ -368,6 +388,14 @@ export default {
   methods: {
     ...mapMutations(["SET_IS_OPEN", "SET_MODE", "SET_NULL_EMPLOYEE"]),
     ...mapActions(["setNewCode"]),
+
+    /**
+     * Focus by refname
+     * Author : LP(2/9)
+     */
+    focusByRefName(refName) {
+      this.$refs[refName].focus();
+    },
 
     /**
      * Remove border red
@@ -471,7 +499,7 @@ export default {
                 // nội dung thông báo
                 self.contentDialog =
                   `Mã nhân viên <${self.employee.employeeCode}> ` +
-                  "đã tồn tại trong hệ thống, vui lòng kiểm tra lại";
+                  "đã tồn tại trong hệ thống, vui lòng kiểm tra lại.";
                 // hiển thị thông báo
                 self.showDialog = true;
                 self.typeDialog = "warning";
@@ -560,18 +588,10 @@ export default {
     },
 
     /**
-     * Focus employee code
-     * LP(28/8)
-     */
-    focusEmployeeCode() {
-      this.$refs.employeeCode.focus();
-    },
-
-    /**
      * Focus date picker
      * Author : LP(1/9)
      */
-    setTabindexDatePicker(refName, tab) {
+    setTabindex(refName, tab) {
       this.$refs[refName].$refs.input.setAttribute("tabindex", tab);
     },
 

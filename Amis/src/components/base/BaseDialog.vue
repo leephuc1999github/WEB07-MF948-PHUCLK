@@ -91,7 +91,7 @@ export default {
   display: block;
   /* border: 1px solid #000; */
   height: 48px;
-  width: 48px;
+  width: 56px;
 }
 
 .warning-icon.warning,

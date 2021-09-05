@@ -55,6 +55,7 @@ namespace MISA.Amis.Core.Services
                 else
                 {
                     serviceResult.SetBadRequest(serviceResult);
+                    serviceResult.UserMessage = "Dữ liệu không tồn tại trong hệ thống!";
                     serviceResult.DevMessage.Add(string.Format(Properties.Resource.NotFound_Msg, id.ToString()));
                 }
             }

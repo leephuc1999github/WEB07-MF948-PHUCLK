@@ -5,6 +5,7 @@ import Toast from 'vue-toastification'
 import "vue-toastification/dist/index.css";
 import Paginate from 'vuejs-paginate'
 import router from "./router";
+Vue.use(require('vue-shortkey'))
 Vue.component('paginate', Paginate)
 Vue.config.productionTip = false
 

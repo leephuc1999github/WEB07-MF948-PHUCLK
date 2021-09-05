@@ -63,6 +63,7 @@
             <tr
               v-for="(employee, index) in getEmployees"
               :key="employee.EmployeeId"
+              @dblclick="editEmployee(employee.employeeId)"
             >
               <td style="position: sticky; left: 0">
                 <input type="checkbox" name="" id="" />
@@ -190,6 +191,7 @@ export default {
 
     // bắt sự kiện chọn pageSize
     EventBus.$on("chooseOptionPaging", () => {
+      this.SET_PAGE_INDEX(1);
       // active trang 1
       this.$refs.paging.selectFirstPage();
       // load lại dữ liệu
@@ -255,7 +257,7 @@ export default {
     openConfirmDialog(code, id) {
       this.id = id;
       this.showDialog = true;
-      this.contentDialog = `Bạn có thực sự muốn xóa Nhân viên có mã nhân viên là <${code}> không?`;
+      this.contentDialog = `Bạn có chắc chắn muốn xóa nhân viên <${code}> không?`;
     },
 
     /**
@@ -287,6 +289,7 @@ export default {
       if (type == 1) {
         this.SET_IS_OPEN(false);
       }
+      this.SET_PAGE_INDEX(1);
       // quay lại trang 1
       this.$refs.paging.selectFirstPage();
       // tải lại dữ liệu
@@ -352,6 +355,7 @@ export default {
       // nếu bấm nút reload => trở về trang đầu
       if (this.isReload || this.isSearching) {
         this.$refs.paging.selectFirstPage();
+        this.SET_PAGE_INDEX(1);
       }
       this.$store.dispatch("setEmployees");
     },

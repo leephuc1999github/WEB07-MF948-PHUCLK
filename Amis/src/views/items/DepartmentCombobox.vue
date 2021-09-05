@@ -7,8 +7,9 @@
         class="h-100 align-self-c"
         :tabindex="tabindex"
         @blur="checkEmpty"
-        @focus="removeBorder"
+        @focus="removeBorder;"
         :title="msgValidate"
+        ref="department"
       />
 
       <div
@@ -31,6 +32,8 @@
           <tr
             :class="current == department.departmentId ? 'active' : ''"
             @click="choose(index)"
+            :tabindex="tabindex"
+            v-shortkey="['enter']" @shortkey="choose(index)"
             v-for="(department, index) in options"
             :key="index"
           >
@@ -107,6 +110,12 @@ export default {
     },
   },
   methods: {
+
+
+    /**
+     * Remove border red
+     * Author : LP(2/9)
+     */
     removeBorder() {
       this.$refs.departmentId.classList = "MISACombobox";
       this.msgValidate = "";
@@ -148,6 +157,8 @@ export default {
       // xóa border-red nếu có
       this.$refs.departmentId.classList = "MISACombobox";
       this.msgValidate = "";
+
+      this.$refs.department.focus();
     },
 
     /**
@@ -268,8 +279,13 @@ tr.active {
 }
 tbody tr {
   cursor: pointer;
+  outline: none;
 }
 tbody tr:hover:not(.active) {
+  color: #2ca01c;
+}
+
+tbody tr:focus:not(.active) {
   color: #2ca01c;
 }
 

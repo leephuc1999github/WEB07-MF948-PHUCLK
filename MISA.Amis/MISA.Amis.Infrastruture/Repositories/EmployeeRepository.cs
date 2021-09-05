@@ -63,7 +63,11 @@ namespace MISA.Amis.Infrastruture.Repositories
             // lấy mã lớn nhất
             string oldCode = _dbConnection.QueryFirstOrDefault<string>("Proc_GetNewEmployeeCode", commandType: CommandType.StoredProcedure);
             // sinh mã mới
-            string newCode = GenerateEmployeeCode(oldCode);
+            string newCode = GenerateEmployeeCode(oldCode, 1);
+            while(this.IsDuplication("EmployeeCode", newCode, new Guid()))
+            {
+                newCode = this.GenerateEmployeeCode(newCode, 1);
+            }
             return newCode;
         }
 
@@ -73,8 +77,9 @@ namespace MISA.Amis.Infrastruture.Repositories
         /// <param name="oldCode">Mã nhân viên cũ</param>
         /// <returns>Mã nhân viên mới</returns>
         /// CreatedBy : LP(27/8)
-        private string GenerateEmployeeCode(string oldCode)
+        private string GenerateEmployeeCode(string oldCode, int counter)
         {
+            const int MIN_LENGTH_CODE = 4;
             string partNumbers = string.Empty;
             for (int i = 0; i < oldCode.Length; i++)
             {
@@ -85,8 +90,12 @@ namespace MISA.Amis.Infrastruture.Repositories
                 }
             }
             // chuyển phần số => số
-            int number = partNumbers.Length > 0 ? int.Parse(partNumbers) : 0;
-            return "NV-" + (number+1);
+            string number = partNumbers.Length > 0 ? (int.Parse(partNumbers)+counter)+"" : "0000";
+            if(number.Length < MIN_LENGTH_CODE)
+            {
+                number = new string('0', MIN_LENGTH_CODE-number.Length) + number;
+            }
+            return "NV-" + number;
             #region OLD
             //string changeValue = "";
             //int plus = 1;
